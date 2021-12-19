@@ -1,0 +1,23 @@
+.footer {
+
+  width: 100%;
+  overflow: hidden;
+
+  span {
+    color: #82667F;
+    white-space: nowrap;
+    font-size: 20px;
+  }
+}
+
+.footer_content {
+  display: flex;
+  gap: 12px;
+  animation: move 20s infinite alternate;
+}
+
+@keyframes move {
+  100%{
+    transform: translateX(-700px);
+  }
+}

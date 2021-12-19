@@ -1,0 +1,55 @@
+.user {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.registration {
+  display: flex;
+  padding: 30px 42px;
+  width: 480px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 46px;
+  box-shadow: 4px 11px 20px -2px rgb(0 0 0 / 24%);
+}
+
+.wrap_btn {
+  display: flex;
+  align-items: flex-end;
+}
+
+.input_wrap {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.input {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: transparent;
+  outline: none;
+  width: 70%;
+  color: white;
+
+  &::placeholder {
+    color: #D3B7BF;
+  }
+}
+
+.btn {
+  padding: 8px 16px;
+  background: white;
+  color: #743875;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

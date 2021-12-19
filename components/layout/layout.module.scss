@@ -1,0 +1,10 @@
+.container {
+    height: 100vh;
+    background: rgb(90, 53, 87);
+    background: linear-gradient(0deg, rgba(90, 53, 87, 1) 13%, rgba(189, 126, 69, 1) 100%);
+    min-height: 100vh;
+}
+
+.page_wrap {
+    height: calc(100vh - 190px);
+}

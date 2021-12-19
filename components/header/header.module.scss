@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 16px 0;
+}
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  list-style: none;
+
+
+  li {
+    position: relative;
+    color: #D5B18A;
+    font-weight: 700;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: white;
+
+      .drop_down {
+        display: flex;
+      }
+    }
+
+    &:nth-child(1) {
+      &:before {
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        display: block;
+        background: black;
+        border-radius: 100%;
+        margin: 0;
+        background: radial-gradient(circle at 20px 7px, #5F2A49, #000);
+        box-shadow: 4px 11px 20px -2px rgba(0, 0, 0, 0.74);
+        animation: bubble-anim 7s infinite 2s alternate;
+      }
+    }
+
+    &:nth-child(2) {
+      &:before {
+        position: absolute;
+        right: -20px;
+        bottom: -70px;
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        display: block;
+        background: black;
+        border-radius: 100%;
+        margin: 0;
+        background: radial-gradient(circle at 20px 7px, #5F2A49, #000);
+        box-shadow: 4px 11px 20px -2px rgba(0, 0, 0, 0.74);
+        animation: bubble-anim 5s infinite 7s alternate;
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        position: absolute;
+        right: -20px;
+        bottom: -50px;
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        display: block;
+        background: black;
+        border-radius: 100%;
+        margin: 0;
+        background: radial-gradient(circle at 20px 7px, #5F2A49, #000);
+        box-shadow: 4px 11px 20px -2px rgba(0, 0, 0, 0.74);
+        animation: bubble-anim 10s infinite 2s alternate;
+      }
+    }
+
+    &:nth-child(4) {
+      &:before {
+        position: absolute;
+        right: -80px;
+        bottom: 30px;
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        display: block;
+        background: black;
+        border-radius: 100%;
+        margin: 0;
+        background: radial-gradient(circle at 20px 7px, #5F2A49, #000);
+        box-shadow: 4px 11px 20px -2px rgba(0, 0, 0, 0.74);
+        animation: bubble-anim 7s infinite 4s alternate;
+      }
+    }
+  }
+}
+
+.drop_down {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  width: max-content;
+  padding: 32px 32px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  // background: linear-gradient(90deg, rgba(151,85,106,1) 0%, rgba(188,131,83,1) 100%);
+  animation: showMenu 0.7s forwards;
+  font-size: 18px;
+  z-index: 5;
+
+
+  a:hover {
+    color: #5F2A49;
+  }
+}
+
+@keyframes showMenu {
+
+  100% {
+    opacity: 1;
+  }
+
+}

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.title {
+    color: white;
+    font-size: 120px;
+    font-weight: 600;
+
+    @media (max-width: 1600px) {
+        font-size: 60px;
+    }
+}
+
+.diagrams_wrap {
+    position: relative;
+}
